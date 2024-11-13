@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Higher Order function and Callback function</h1>
+</body>
+<script>
+    function A(name,age){
+        return `My name is ${name()},I'm ${age()} years old`;
+    }
+    // const A = (name,age) => `My name is ${name},I'm ${age} years old`;
+
+    function Name () {
+        return "Somonor";
+    }
+    function Age (){
+        return 18;
+    }
+
+    const result = A(Name,Age);
+    console.log(result);
+</script>
+</html>
