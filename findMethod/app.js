@@ -1,4 +1,5 @@
-// Filter method : return many element
+// find method : return only one element
+// if string return string
 
 const userData = [
     {
@@ -13,15 +14,11 @@ const userData = [
     },
     {
         name: "Hong MonyOudom",
-        age: 8,
+        age: 15,
         job: "Student"
     }
 ];
 
-// const filterArray = userData.filter(function (item) {
-//     return item.age >10;
-// });
+const findUser = userData.find((item)=> item.age == 15);
 
-const filterArray = userData.filter((item) => item.age > 10)
-
-console.log(filterArray);
+console.log(findUser);
